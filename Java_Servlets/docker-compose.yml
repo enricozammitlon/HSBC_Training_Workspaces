@@ -2,17 +2,13 @@ version: '3.7'
 
 services:
   java-image:
-    build:
-      context: .
-    image: java-training:latest
+    image: tomcat:jdk8-openjdk
     depends_on:
       - db
     ports:
-      - "8080:8080"
+      - "80:8080"
     env_file:
       - .env
-    volumes:
-      - ./:/java
   db:
     image: mysql:8.0.21
     ports:
