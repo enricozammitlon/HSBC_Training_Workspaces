@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   java-image:
-    image: tomcat:jdk8-openjdk
+    image: tomcat:jdk15-openjdk
     depends_on:
       - db
     ports:

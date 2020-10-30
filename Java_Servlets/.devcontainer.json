@@ -8,8 +8,8 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash",
-		"java.home": "/docker-java-home",
-		"maven.executable.path": "/usr/local/sdkman/candidates/maven/current/bin/mvn",
+		"java.home": "/usr/local/openjdk-15/",
+		//"maven.executable.path": "/usr/local/sdkman/candidates/maven/current/bin/mvn",
 		"java.format.onType.enabled" :true,
 		"java.format.enabled": true,
 	},
@@ -28,6 +28,5 @@
 	// "postCreateCommand": "java -version",
 
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode",
-	"workspaceFolder": "/java"
+	"workspaceFolder": "/workspace"
 }
