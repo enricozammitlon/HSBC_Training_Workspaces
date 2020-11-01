@@ -1,0 +1,25 @@
+<html>
+    First number: <input id="no1"> <br>
+    Second number: <input id="no2"> <br>
+    <input id ="addButton" type="button" value="Add" onclick="add()"><br>
+    Result: <input id="result"> <br>
+    <script>
+        let no1 = window.document.getElementById("no1");
+        let no2 = window.document.getElementById("no2");
+        let result = window.document.getElementById("result");
+
+        function add(){
+            if(no1.value===""){
+                alert("Please enter first number");
+                no1.focus()
+            }
+            else{
+                if(no2.value===""){
+                    alert("Please enter second number");
+                    no2.focus()
+                }
+                result.value = parseInt(no1.value)  + parseInt(no2.value)
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <input id="no1" value="0" onmouseenter="initialize()">
+    <br>
+    <input id="B1" type="button" value="increment" onmousemove="increment()">
+    <input id="B2" type="button" value="increment" onmousemove="decrement()">
+    <br>
+
+    <script>
+        let ref = window.document.getElementById("no1");
+        function increment(){
+            let data = parseInt(ref.value);
+            data++;
+            ref.value=data;
+        }
+        function decrement(){
+            let data = parseInt(ref.value);
+            data--;
+            ref.value=data;
+        }
+        function initialize(){
+            ref.value=0;
+        }
+    </script>
+</html>

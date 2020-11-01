@@ -1,3 +1,7 @@
+This shall all be changed to inside a Dockerfile + a bash script, for now cba
+
+First time:
+* `mkdir /usr/local/tomcat/webapps/myApp`
 To run a servlet everytime:
 * Open an Integrated terminal in the folder with the structure:
     * src

@@ -1,0 +1,27 @@
+<html>
+    First number: <input id="no1"> <br>
+    Second number: <input id="no2"> <br>
+    <input id ="addButton" type="button" value="+" onclick="add()">
+    <input id ="subtractButton" type="button" value="-" onclick="sub()">
+    <input id ="divideButton" type="button" value="/" onclick="sub()">
+    <input id ="multiplyButton" type="button" value="*" onclick="mult()">
+    <br>
+    Result: <input id="result"> <br>
+    <script>
+        let no1 = window.document.getElementById("no1");
+        let no2 = window.document.getElementById("no2");
+        let result = window.document.getElementById("result");
+        function add(){
+            result.value = parseInt(no1.value)  + parseInt(no2.value)
+        }
+        function sub(){
+            result.value = parseInt(no1.value)  - parseInt(no2.value)
+        }
+        function div(){
+            result.value = parseInt(no1.value)  / parseInt(no2.value)
+        }
+        function mult(){
+            result.value = parseInt(no1.value)  * parseInt(no2.value)
+        }
+    </script>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <body onclick="boom3()" onkeydown="boom4()">
+        <div id="A" style="position:absolute;top:10px;left:10px" onclick="boom()">
+            Hi there, im a div
+        </div>
+        <span style="position:absolute;top:100px;left:100px" id="B" onclick="boom2();">
+            Hi there, im a span
+        </span>
+    </body>
+    <script>
+        let fs=10;
+        let refA = window.document.getElementById("A");
+        let refB = window.document.getElementById("B");
+        function boom(){
+            refA.style.top=100;
+        }
+        function boom2(){
+            console.log("hey im a span alert")
+        }
+        function boom3(){
+            refB.style.top=window.event.clientY;
+            refB.style.left=window.event.clientX;
+        }
+        function boom4(){
+            if(window.event.ctrlKey == true){
+                fs++;
+            }
+            if(window.event.altKey == true){
+                fs--;
+            }
+            refB.style.fontSize = fs;
+        }
+    </script>
+</html>

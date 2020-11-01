@@ -1,0 +1,39 @@
+<html>
+    <form action="http://wwww.bbc.co.uk" method='post' onsubmit="return check()">
+        name: <input type='text' name='name' id='name' value=''>
+        <span id="errorName" style="color:red;visibility:hidden;">**</span>
+        <br>
+        email: <input type='text' name='email' id='email' value=''>
+        <span id="errorEmail" style="color:red;visibility:hidden;">**</span>
+        <br>
+        address: <input type='text' name='address' id='address' value=''>
+        <span id="errorAddress" style="color:red;visibility:hidden;">**</span>
+        <br>
+        <input type='submit'>
+    </form>
+    <script>
+        function check(){
+            let result;
+            document.getElementById("errorName").style.visibility = 'hidden';
+            document.getElementById("errorEmail").style.visibility = 'hidden';
+            document.getElementById("errorAddress").style.visibility = 'hidden';
+
+            if(document.getElementById('name').value.trim()=== ''){
+                document.getElementById("errorName").style.visibility = 'visible';
+                alert("Name is missing")
+                result= false;
+            }
+            if(document.getElementById('email').value.trim()=== ''){
+                document.getElementById("errorEmail").style.visibility = 'visible';
+                alert("Email is missing")
+                result= false;
+            }
+            if(document.getElementById('address').value.trim()=== ''){
+                document.getElementById("errorAddress").style.visibility = 'visible';
+                alert("Address is missing")
+                result = false;
+            }
+            return result;
+        }
+    </script>
+</html>
