@@ -6,6 +6,19 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Demo3Application",
+            "request": "launch",
+            "mainClass": "com.demo.three.demo_3.Demo3Application"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Demo1Application",
+            "request": "launch",
+            "mainClass": "com.demo.one.demo_1.Demo1Application",
+            "projectName": "demo_1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - App",
             "request": "launch",
             "mainClass": "App"
@@ -23,6 +36,26 @@
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "mainClass": "com.demo.four.demo_4.Demo4Application",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Demo2Application<demo_2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.demo.two.demo_2.Demo2Application",
+            "projectName": "demo_2",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Demo3Application<demo_3>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.demo.three.demo_3.Demo3Application",
+            "projectName": "demo_3",
             "args": ""
         }
     ]

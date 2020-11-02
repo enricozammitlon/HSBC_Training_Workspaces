@@ -1,0 +1,17 @@
+<html>
+
+    <input type="text" id="input" >
+    <br>
+    <input type="button" onclick="reverse()" value="Reverse Me!">
+    <br>
+    <input type="text" id="output" >
+    <script>
+        let refInput = window.document.getElementById('input')
+        let refOutput = window.document.getElementById('output')
+
+        function reverse(){
+            let currentInputs = refInput.value.split(" ")
+            refOutput.value= currentInputs.map(x => x.split("").reverse().join("")).join(" ")
+        }
+    </script>
+</html>
