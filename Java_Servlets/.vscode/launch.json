@@ -6,6 +6,64 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Day7Demo3Application",
+            "request": "launch",
+            "mainClass": "com.test.day_7_demo_3.Day7Demo3Application"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Demo3Application",
+            "request": "launch",
+            "mainClass": "src.main.java.day.seven.demo.three.demo_3.Demo3Application",
+            "projectName": "workspace_1b93b146"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Demo3Application",
+            "request": "launch",
+            "mainClass": "day.seven.demo.three.demo_3.Demo3Application"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Day7Demo2Application",
+            "request": "launch",
+            "mainClass": "com.day.seven.demo.two.day_7_demo_2.Day7Demo2Application",
+            "projectName": "day_7_demo_2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Day7Demo2Application",
+            "request": "launch",
+            "mainClass": "Day7Demo2Application",
+            "projectName": "workspace_1b93b146"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Launcher",
+            "request": "launch",
+            "mainClass": "Assesment.src.Launcher",
+            "projectName": "workspace_1b93b146"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Launcher",
+            "request": "launch",
+            "mainClass": "Launcher"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Demo2Application",
+            "request": "launch",
+            "mainClass": "com.day.seven.demo.two.demo_2.Demo2Application"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Demo2Application",
+            "request": "launch",
+            "mainClass": "com.demo.two.demo_2.Demo2Application"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Demo3Application",
             "request": "launch",
             "mainClass": "com.demo.three.demo_3.Demo3Application"

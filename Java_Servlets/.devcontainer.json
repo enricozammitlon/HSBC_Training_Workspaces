@@ -19,7 +19,8 @@
 		"vscjava.vscode-java-pack",
 		"pivotal.vscode-boot-dev-pack",
 		"adashen.vscode-tomcat",
-		"shengchen.vscode-checkstyle"
+		"shengchen.vscode-checkstyle",
+		"sohibe.java-generate-setters-getters"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
