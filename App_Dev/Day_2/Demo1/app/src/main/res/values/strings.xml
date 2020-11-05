@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demo 1</string>
+    <string name="button_prompt">Click the button</string>
+    <string name="button_contents">Randomize!</string>
+    <string name="item_one">Add Name</string>
+    <string name="item_two">Remove Name</string>
+
+</resources>
