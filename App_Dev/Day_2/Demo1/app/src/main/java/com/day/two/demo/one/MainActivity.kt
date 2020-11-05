@@ -1,10 +1,13 @@
 package com.day.two.demo.one
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -27,6 +30,38 @@ class MainActivity : AppCompatActivity() {
             Log.d(this.localClassName,"New random name generated")
             randomizedText.text = dataClass.listBase() };
         //Toast.makeText(this,"Yay! You've clicked me!",Toast.LENGTH_SHORT).show()
+    }
+    fun startService(view: View?) {
+        startService(Intent(baseContext, MyService::class.java))
+    }
+    fun stopService(view: View?) {
+        stopService(Intent(baseContext, MyService::class.java))
+    }
+
+    /** Called when the activity is about to become visible.  */
+    override fun onStart() {
+        super.onStart()
+        Log.d("My Application", "The onStart() event has executed")
+    }
+    /** Called when the activity has become visible.  */
+    override fun onResume() {
+        super.onResume()
+        Log.d("My Application", "The onResume() event has executed")
+    }
+    /** Called when another activity is taking focus.  */
+    override fun onPause() {
+        super.onPause()
+        Log.d("My Application", "The onPause() event has executed")
+    }
+    /** Called when the activity is no longer visible.  */
+    override fun onStop() {
+        super.onStop()
+        Log.d("My Application", "The onStop() event has executed")
+    }
+    /** Called just before the activity is destroyed.  */
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("My Application", "The onDestroy() event has executed")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -76,6 +111,14 @@ class MainActivity : AppCompatActivity() {
                     Log.d(this.localClassName,dataClass.getList().toString())
                 }
                 builder.show()
+                true
+            }
+            R.id.website_button -> {
+                val i = Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://www.qa.com")
+                )
+                startActivity(i)
                 true
             }
             else -> return super.onOptionsItemSelected(item)

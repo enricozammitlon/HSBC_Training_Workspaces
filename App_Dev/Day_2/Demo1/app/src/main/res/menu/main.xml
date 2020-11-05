@@ -5,4 +5,6 @@
     <item android:title="@string/item_one" android:id="@+id/menu_add"
         app:showAsAction="never"/>
     <item android:title="@string/item_two" android:id="@+id/menu_remove" />
+    <item android:title="@string/website_button" android:id="@+id/website_button" />
+
 </menu>
